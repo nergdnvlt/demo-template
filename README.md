@@ -6,6 +6,20 @@ Use the included setup tool (`make setup`) whenever possible as it saves
 your information and can be re-run multiple times to update `.env` files
 and `cloudbuild.yaml` files. 
 
+## Git Checkout Basiscs
+
+If you want to save changes that you make to your demo, it's a good idea
+to use git branches.
+
+ 1. Check out the code: `git clone git@github.com:apollographql/se-demo-template.git` or `git clone https://github.com/apollographql/se-demo-template.git` (use the second one if you haven't setup a SSH key in GitHub).
+ 2. Make your own branch: `git checkout -b <my-branch-name>` use your name or something for `<my-branch-name>`.
+ 3. Push (create) your branch on GitHub: `git push origin <my-branch-name>`
+ 4. To add a new file to your branch: `git add <my-file-name>`
+ 5. If you want to save (a)ll your changes and include a (m)essage: `git commit -am "My message about what I changed"`
+ 6. If you want to save it remotely (on GitHub) you need to push: `git push origin <my-branch-name>`
+ 7. If you want to update your branch with updates made to the main branch: `git pull origin master`
+ 8. If you want to revert a change to a file that you haven't set saved (commited): `git checkout <the-file-name>`
+
 ## Prereqs
 
  1. Check out this repository (forking is disabled, sorry)
