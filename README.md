@@ -78,7 +78,7 @@ to use git branches.
  1. Enable Cloud Functions by going to that tab in the Google Cloud Console
  2. Go to Cloud Build->Settings and enable the "Cloud Functions" service account
  3. Edit the client/client.py file to put in the URL of your gateway (must be deployed, not local)
- 4. Run `make traffic-gen` it may ask you to enable some things like AppEngine, say (y)es
+ 4. Run `make traffic-gen` it may ask you to enable some things like AppEngine, say (y)es (this will run `make setup-traffic-gen` and `make deploy` in the `client` directory)
  5. If you need to re-deploy your client for any reason go into the `client` directory and run `make deploy`
 
 ### CI/CD Method
