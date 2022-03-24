@@ -1,4 +1,4 @@
-# SE Demo Template
+Demo Template
 
 Use this template to quickly build and deploy a Federated demo environment.
 
